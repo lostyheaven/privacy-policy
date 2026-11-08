@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Goal Tracker</title>
+  <style>
+    :root {
+      --primary: #3B6EA8;
+      --bg: #F8FAFC;
+      --card-bg: #FFFFFF;
+      --text-main: #0F172A;
+      --text-muted: #475569;
+      --border: #E2E8F0;
+      --badge-bg: #E0F2FE;
+      --badge-text: #0369A1;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --primary: #60A5FA;
+        --bg: #0B1120;
+        --card-bg: #1E293B;
+        --text-main: #F1F5F9;
+        --text-muted: #94A3B8;
+        --border: #334155;
+        --badge-bg: #1E3A8A;
+        --badge-text: #93C5FD;
+      }
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      padding: 2.5rem;
+      border-radius: 1.25rem;
+      border: 1px solid var(--border);
+      box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+    }
+    .header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1.5rem;
+      margin-bottom: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    .lang-switch {
+      display: flex;
+      gap: 0.5rem;
+      align-self: flex-start;
+      margin-bottom: 0.5rem;
+    }
+    .lang-btn {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--text-main);
+      padding: 0.35rem 0.85rem;
+      border-radius: 9999px;
+      font-size: 0.875rem;
+      cursor: pointer;
+      font-weight: 500;
+    }
+    .lang-btn.active {
+      background: var(--primary);
+      color: #FFFFFF;
+      border-color: var(--primary);
+    }
+    h1 {
+      font-size: 1.875rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+    .badge {
+      display: inline-block;
+      align-self: flex-start;
+      background: var(--badge-bg);
+      color: var(--badge-text);
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 0.25rem 0.65rem;
+      border-radius: 9999px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .date {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-top: 1.75rem;
+      margin-bottom: 0.75rem;
+      color: var(--primary);
+    }
+    p, ul {
+      margin-bottom: 1rem;
+      color: var(--text-muted);
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    li {
+      margin-bottom: 0.35rem;
+    }
+    strong {
+      color: var(--text-main);
+    }
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .highlight-box {
+      background-color: var(--bg);
+      border-left: 4px solid var(--primary);
+      padding: 1rem;
+      border-radius: 0.5rem;
+      margin: 1.25rem 0;
+    }
+    .footer {
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.875rem;
+      text-align: center;
+      color: var(--text-muted);
+    }
+    .section-uk { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="lang-switch">
+        <button class="lang-btn active" onclick="switchLang('en')">English</button>
+        <button class="lang-btn" onclick="switchLang('uk')">Українська</button>
+      </div>
+      <span class="badge">100% Offline-First</span>
+      <h1 id="title">Privacy Policy for Goal Tracker</h1>
+      <p class="date" id="updated">Last updated: November 5, 2026</p>
+    </div>
+
+    <!-- ENGLISH VERSION -->
+    <div id="content-en">
+      <div class="highlight-box">
+        <strong>Privacy by Design:</strong> Goal Tracker is an offline-first application. We do not operate external accounts, databases, or analytics servers. All your goals, habits, and progress remain strictly on your own device.
+      </div>
+
+      <h2>1. Overview</h2>
+      <p>This Privacy Policy explains how <strong>Goal Tracker</strong> ("the App") handles information. The App is developed as a completely offline personal productivity assistant designed to help you track countdowns, deadlines, habits, and financial goals without compromising your privacy.</p>
+
+      <h2>2. What Information We Handle</h2>
+      <p>All data processed by the App is stored and handled exclusively on your device:</p>
+      <ul>
+        <li><strong>Goals & Habits Data:</strong> Titles, descriptions, target dates, monetary milestones, habit frequencies, notes, and completion checks. This data is kept solely in local device storage via SQLite.</li>
+        <li><strong>App Lock (PIN & Biometrics):</strong> If you enable App Lock, your PIN is salted and hashed locally. Biometric authentication (fingerprint or face unlock) is performed directly by the Android operating system hardware enclave (<code>BiometricPrompt</code>). The App never sees, accesses, or stores raw biometric data.</li>
+        <li><strong>User Preferences:</strong> Visual theme, language, and notification settings stored locally in <code>SharedPreferences</code>.</li>
+      </ul>
+
+      <h2>3. Device Permissions & Usage</h2>
+      <p>Goal Tracker requests only permissions strictly necessary for offline operations:</p>
+      <ul>
+        <li><strong><code>POST_NOTIFICATIONS</code>:</strong> To show scheduled reminder notifications configured by you. Reminders run locally on your device.</li>
+        <li><strong><code>RECEIVE_BOOT_COMPLETED</code>:</strong> To restore scheduled local reminders if your phone restarts.</li>
+        <li><strong><code>USE_BIOMETRIC</code>:</strong> To authenticate you via your device's fingerprint or face sensor upon opening the App (if enabled).</li>
+      </ul>
+      <p>The App <strong>does not</strong> request or use permissions for camera, microphone, contacts, location, or device identifiers.</p>
+
+      <h2>4. Data Backup & Export</h2>
+      <p>You can export your database into a readable JSON backup file at any time. The backup file is written to your device's local storage (such as the Downloads folder). You maintain total ownership and control over your backup files.</p>
+
+      <h2>5. No Advertising & No Analytics</h2>
+      <p>Goal Tracker contains <strong>zero advertising networks</strong>, <strong>zero analytics SDKs</strong> (no Firebase, no Google Analytics, no telemetry), and <strong>zero third-party data tracking</strong>.</p>
+
+      <h2>6. Contact</h2>
+      <p>For questions or support regarding this Privacy Policy, visit our project repository:</p>
+      <p><a href="https://github.com/lostyheaven/goal_tracker" target="_blank" rel="noopener">https://github.com/lostyheaven/goal_tracker</a></p>
+    </div>
+
+    <!-- UKRAINIAN VERSION -->
+    <div id="content-uk" class="section-uk">
+      <div class="highlight-box">
+        <strong>Конфіденційність за замовчуванням:</strong> Goal Tracker є повністю офлайн-додатком. У нас немає зовнішніх облікових записів, серверів чи систем аналітики. Усі ваші цілі, звички та прогрес залишаються виключно на вашому пристрої.
+      </div>
+
+      <h2>1. Загальні положення</h2>
+      <p>Ця Політика конфіденційності пояснює, як додаток <strong>Goal Tracker</strong> («Додаток») обробляє інформацію. Додаток створений як повністю автономний інструмент особистої продуктивності за принципом <em>offline-first</em>, що дозволяє відстежувати дедлайни, звички та фінансові цілі з повною гарантією приватності.</p>
+
+      <h2>2. Які дані обробляються</h2>
+      <p>Уся інформація, що створюється в Додатку, зберігається виключно на вашому пристрої:</p>
+      <ul>
+        <li><strong>Дані цілей та звичок:</strong> Назви, описи, цільові дати, суми накопичень, графіки звичок та відмітки виконання. Ці дані зберігаються локально в базі даних SQLite.</li>
+        <li><strong>Захист доступу (PIN та біометрія):</strong> При увімкненні блокування додатку ваш PIN-код хешується локально. Біометрична автентифікація (відбиток пальця чи розпізнавання обличчя) здійснюється операційною системою Android (<code>BiometricPrompt</code>). Додаток не має доступу до біометричних даних і отримує від системи лише статус підтвердження.</li>
+        <li><strong>Налаштування:</strong> Тема оформлення, мова інтерфейсу та параметри нагадувань зберігаються локально в <code>SharedPreferences</code>.</li>
+      </ul>
+
+      <h2>3. Дозволи додатку</h2>
+      <p>Goal Tracker запитує лише ті системні дозволи, які потрібні для локальної роботи:</p>
+      <ul>
+        <li><strong><code>POST_NOTIFICATIONS</code>:</strong> Для показу локальних нагадувань про цілі та звички, налаштованих користувачем.</li>
+        <li><strong><code>RECEIVE_BOOT_COMPLETED</code>:</strong> Для відновлення розкладу локальних нагадувань після перезапуску пристрою.</li>
+        <li><strong><code>USE_BIOMETRIC</code>:</strong> Для розблокування додатку за відбитком пальця (якщо функція активована).</li>
+      </ul>
+      <p>Додаток <strong>не вимагає</strong> доступу до камери, мікрофона, контактів, геопозиції чи ідентифікаторів пристрою.</p>
+
+      <h2>4. Резервне копіювання</h2>
+      <p>Ви можете експортувати свої дані у JSON-файл у будь-який момент. Файл зберігається у внутрішню пам'ять телефону (наприклад, у папку «Завантаження»). Ви повністю контролюєте свої файли бекапів.</p>
+
+      <h2>5. Без реклами та аналітики</h2>
+      <p>У Goal Tracker <strong>немає рекламних систем</strong>, <strong>немає трекерів аналітики</strong> (без Firebase, Google Analytics тощо) та <strong>немає передачі даних стороннім компаніям</strong>.</p>
+
+      <h2>6. Контакти</h2>
+      <p>З будь-яких питань щодо Політики конфіденційності звертайтеся до нашого репозиторію:</p>
+      <p><a href="https://github.com/lostyheaven/goal_tracker" target="_blank" rel="noopener">https://github.com/lostyheaven/goal_tracker</a></p>
+    </div>
+
+    <div class="footer">
+      &copy; 2026 Goal Tracker (lostyheaven). All rights reserved.
+    </div>
+  </div>
+
+  <script>
+    function switchLang(lang) {
+      const enContent = document.getElementById('content-en');
+      const ukContent = document.getElementById('content-uk');
+      const title = document.getElementById('title');
+      const updated = document.getElementById('updated');
+      const buttons = document.querySelectorAll('.lang-btn');
+
+      buttons.forEach(btn => btn.classList.remove('active'));
+
+      if (lang === 'uk') {
+        enContent.style.display = 'none';
+        ukContent.style.display = 'block';
+        title.innerText = 'Політика конфіденційності Goal Tracker';
+        updated.innerText = 'Останнє оновлення: 5 листопада 2026 р.';
+        buttons[1].classList.add('active');
+      } else {
+        enContent.style.display = 'block';
+        ukContent.style.display = 'none';
+        title.innerText = 'Privacy Policy for Goal Tracker';
+        updated.innerText = 'Last updated: November 5, 2026';
+        buttons[0].classList.add('active');
+      }
+    }
+  </script>
+</body>
+</html>
