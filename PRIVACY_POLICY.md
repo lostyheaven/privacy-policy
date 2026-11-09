@@ -1,14 +1,14 @@
-# Privacy Policy for Goal Tracker
+# Privacy Policy for Strive
 
-**Last updated:** November 5, 2026
+**Last updated:** November 9, 2026
 
-This Privacy Policy applies to the **Goal Tracker** mobile application ("the App"), developed as an offline-first personal productivity tool.
+This Privacy Policy applies to the **Strive** mobile application ("the App"), developed by Heaven Apps as an offline-first personal productivity tool.
 
 ---
 
 ## 1. Summary (Privacy by Design)
 
-- **100% Offline-First:** Goal Tracker does not require an account, registration, or internet connection to function.
+- **100% Offline-First:** Strive does not require an account, registration, or internet connection to function.
 - **No Data Collection:** We do not collect, transmit, store, sell, or share any personal information, usage analytics, or telemetry with external servers or third parties.
 - **Your Data Stays on Your Device:** All your goals, habits, financial plans, streaks, reminders, and history are stored locally in an encrypted/isolated SQLite database on your device.
 
@@ -32,7 +32,7 @@ All data created or configured within the App is processed exclusively on your d
 
 ## 3. Device Permissions and Why We Need Them
 
-Goal Tracker requests only the minimum permissions necessary for offline functionality:
+Strive requests only the minimum permissions necessary for offline functionality:
 
 - **Notifications (`android.permission.POST_NOTIFICATIONS`):**  
   Used solely to display scheduled local reminders for your goals and habits at times you explicitly choose. Notifications are generated and scheduled entirely on-device (`flutter_local_notifications`).
@@ -41,7 +41,7 @@ Goal Tracker requests only the minimum permissions necessary for offline functio
 - **Biometric Hardware (`android.permission.USE_BIOMETRIC`):**  
   Used to unlock the App using your device's fingerprint or face unlock sensor if you choose to enable biometric security.
 
-Goal Tracker **does not** request permissions for your location, contacts, microphone, camera, or device identifiers (IMEI/MAC).
+Strive **does not** request permissions for your location, contacts, microphone, camera, or device identifiers (IMEI/MAC).
 
 ---
 
@@ -62,7 +62,7 @@ Goal Tracker **does not** request permissions for your location, contacts, micro
 
 ## 6. Children's Privacy
 
-Goal Tracker is safe for users of all ages. We do not collect any personal information from children or adults alike.
+Strive is safe for users of all ages. We do not collect any personal information from children or adults alike.
 
 ---
 
@@ -74,19 +74,19 @@ If we ever update this Privacy Policy (for example, if new offline features are 
 
 ## 8. Contact Us
 
-If you have questions, feedback, or concerns regarding this Privacy Policy or the App, please open an issue on our GitHub repository:
-- **GitHub Repository:** https://github.com/lostyheaven/goal_tracker
-- **Developer:** lostyheaven
+If you have questions, feedback, or concerns regarding this Privacy Policy or the App, please visit our repository:
+- **Developer:** Heaven Apps (lostyheaven)
+- **Website:** https://lostyheaven.github.io/privacy-policy/
 
 ---
 
 <br/>
 
-# Політика конфіденційності для Goal Tracker
+# Політика конфіденційності для Strive
 
-**Останнє оновлення:** 5 листопада 2026 р.
+**Останнє оновлення:** 9 листопада 2026 р.
 
-Ця Політика конфіденційності поширюється на мобільний додаток **Goal Tracker** («Додаток»), створений як повністю автономний інструмент особистої продуктивності за принципом offline-first.
+Ця Політика конфіденційності поширюється на мобільний додаток **Strive** («Додаток»), розроблений студією Heaven Apps як повністю автономний інструмент особистої продуктивності за принципом offline-first.
 
 ---
 
@@ -116,7 +116,7 @@ If you have questions, feedback, or concerns regarding this Privacy Policy or th
 
 ## 3. Дозволи додатку та навіщо вони потрібні
 
-Goal Tracker запитує лише мінімально необхідні дозволи:
+Strive запитує лише мінімально необхідні дозволи:
 
 - **Сповіщення (`android.permission.POST_NOTIFICATIONS`):**  
   Використовується виключно для показу локальних нагадувань про ваші цілі та звички у встановлений вами час. Нагадування створюються повністю локально на пристрої (`flutter_local_notifications`).
@@ -147,5 +147,5 @@ Goal Tracker запитує лише мінімально необхідні д�
 ## 6. Зворотний зв'язок та контакти
 
 Якщо у вас виникли запитання щодо Політики конфіденційності або роботи додатку:
-- **GitHub репозиторій:** https://github.com/lostyheaven/goal_tracker
-- **Розробник:** lostyheaven
+- **Розробник:** Heaven Apps (lostyheaven)
+- **Сайт:** https://lostyheaven.github.io/privacy-policy/
